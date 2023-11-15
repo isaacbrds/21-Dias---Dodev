@@ -10,3 +10,6 @@ console.log(num1 - num2)
 console.log(num1 / num2)
 console.log(num1 * num2)
 console.log(num1 % num2)
+
+let entradaDoUsuario = prompt('Digite aqui o que quer fazer. ')
+console.log(entradaDoUsuario)
