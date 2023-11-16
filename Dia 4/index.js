@@ -1,9 +1,13 @@
-let idade = Number(prompt('Insira sua idade'))
+let fome = prompt('Você está com fome? ')
+let dinheiro = prompt('Você está com Dinheiro? ')
+let aberto = prompt('O restaurante está com aberto? ')
 
 
-if (idade >= 60){
-    console.log('Você está na terceira idade pegue sua carteirinha de idoso!')
-}else{
-    console.log('Você ainda não possui idade para carteirinha do idoso :(')
+if (fome !== 'sim' || dinheiro !== 'sim'){
+    console.log('Jantar em casa!')
+}else if(fome === 'sim' && dinheiro === 'sim' && aberto === 'não'){
+    console.log('Peça um delivery')
+}else if(fome === 'sim' && dinheiro === 'sim' && aberto === 'sim'){
+    console.log('Hoje seu jantar será no seu restaurante preferido!')
 }
 
