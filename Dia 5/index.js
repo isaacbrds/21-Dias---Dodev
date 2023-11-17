@@ -1,12 +1,20 @@
-let idade = Number(prompt('Digite sua Idade'))
+let primeiro = Number(prompt('Digite o primeiro número'))
+let segundo = Number(prompt('Digite o segundo número'))
+let operacao = prompt('Digite a operação desejada (+ - * /)')
 
 
-switch(idade){
-    case 13:
-        console.log('Voce tem 15 anos')
+switch(operacao){
+    case '+':
+        console.log('O resultado foi: ' + (primeiro + segundo))
         break;
-    case 15:
-        console.log('Voce tem 15 anos')
+    case '-':
+        console.log('O resultado foi: ' + (primeiro - segundo))
+        break;
+    case '*':
+        console.log('O resultado foi: ' + (primeiro * segundo))
+        break;
+    case '/':
+        console.log('O resultado foi: ' + (primeiro / segundo))
         break;
     default:
         console.log('Não sei sua idade cara!')
