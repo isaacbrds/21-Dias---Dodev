@@ -1,20 +1,17 @@
-let primeiro = Number(prompt('Digite o primeiro número'))
-let segundo = Number(prompt('Digite o segundo número'))
-let operacao = prompt('Digite a operação desejada (+ - * /)')
+let opcao = prompt('Digite a opção desejada (Abastecer com gasolina,Abastecer com alcool ou calibrar penus)')
+let valor = 0
 
-
-switch(operacao){
-    case '+':
-        console.log('O resultado foi: ' + (primeiro + segundo))
+switch(opcao){
+    case 'gasolina':
+        valor = Number(prompt('Digite o valor que deseja abastecer'))
+        console.log('Você abasteceu : ' + Math.round(valor/5) + ' litros de gasolina')
         break;
-    case '-':
-        console.log('O resultado foi: ' + (primeiro - segundo))
+    case 'alcool':
+        valor = Number(prompt('Digite o valor que deseja abastecer'))
+        console.log('Você abasteceu : ' + Math.round(valor/3) + ' litros de alcool')
         break;
-    case '*':
-        console.log('O resultado foi: ' + (primeiro * segundo))
-        break;
-    case '/':
-        console.log('O resultado foi: ' + (primeiro / segundo))
+    case 'calibrar':
+        console.log('Pneus calibrados com sucesso!')
         break;
     default:
         console.log('Não sei sua idade cara!')
