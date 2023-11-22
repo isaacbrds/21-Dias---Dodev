@@ -1,11 +1,11 @@
-let quantidadeDeNumeros = Number(prompt('Digite a quantidade de números que deseja inserir'))
+let inicio = Number(prompt('Digite o número que deseja inserir'))
 let array = [];
-let arrayContrario = [];
 
-for(let contador = 0; contador < quantidadeDeNumeros ; contador++){
-    let numero = Number(prompt('Digite o valor do numero'));
-    array[contador] = numero;
-    arrayContrario[quantidadeDeNumeros - contador - 1] = numero;
+array[0] = inicio - 1
+array[1] = inicio
+
+for(let contador = 2; contador < 10 ; contador++){
+    array[contador] = array[contador - 1] + array[contador - 2];
 }
 
-console.log(array, arrayContrario)
+console.log(array)
